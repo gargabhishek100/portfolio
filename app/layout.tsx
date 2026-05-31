@@ -26,7 +26,6 @@ export const metadata: Metadata = {
   title: "Abhishek Garg — Engineer · ML · Infrastructure",
   description:
     "L&T engineer and IIT Madras M.Tech researcher building ML systems for physical infrastructure — across electrical, SCADA, and construction management.",
-  robots: { index: false, follow: false },
 };
 
 export default function RootLayout({
