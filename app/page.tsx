@@ -1,7 +1,7 @@
 import { Hero } from "@/components/sections/hero";
+import { Work } from "@/components/sections/work";
 
-const sections = [
-  { id: "work", label: "01 — Selected Work" },
+const placeholders = [
   { id: "about", label: "02 — About" },
   { id: "skills", label: "03 — Skills" },
   { id: "contact", label: "04 — Contact" },
@@ -11,14 +11,15 @@ export default function Home() {
   return (
     <main className="flex-1">
       <Hero />
+      <Work />
 
       {/* SECTION PLACEHOLDERS — replaced one by one as we build each */}
-      {sections.map((section, i) => (
+      {placeholders.map((section, i) => (
         <section
           key={section.id}
           id={section.id}
           className={`scroll-mt-16 border-t border-border ${
-            i % 2 === 1 ? "bg-muted/40" : ""
+            i % 2 === 0 ? "bg-muted/40" : ""
           }`}
         >
           <div className="mx-auto flex min-h-[60vh] max-w-6xl flex-col justify-center px-6 py-24">
