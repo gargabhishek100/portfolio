@@ -46,7 +46,7 @@ export function Footer() {
             })}
           </ul>
           <p className="text-xs text-muted-foreground">
-            &copy; {year} {siteConfig.name}. Built with Next.js.
+            &copy; {year} {siteConfig.name}. Built by Abhishek Garg.
           </p>
         </div>
       </div>
