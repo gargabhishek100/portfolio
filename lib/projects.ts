@@ -48,4 +48,15 @@ export const projects: Project[] = [
     status: "in-progress",
     links: [],
   },
+  {
+    slug: "ml-lab",
+    title: "ML Lab",
+    tagline:
+      "Six end-to-end ML models applied to IIT Madras coursework domains — classical classification through deep-learning anomaly detection.",
+    description:
+      "A structured learning series building one complete ML model per domain — Construction Economics, DSAI in Finance, Construction Quality, Construction Safety, Smart Power Grid, and EMS SCADA. Each model is trained in Python, deployed on HuggingFace Spaces, and logs every prediction to MongoDB Atlas.",
+    tech: ["Python", "scikit-learn", "TensorFlow", "HuggingFace Spaces", "MongoDB", "Gradio"],
+    status: "live",
+    links: [{ label: "Explore models", href: "/ml-models" }],
+  },
 ];

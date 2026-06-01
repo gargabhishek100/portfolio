@@ -39,6 +39,7 @@ export default function RootLayout({
     <html
       lang="en"
       className={`${inter.variable} ${fraunces.variable} ${geistMono.variable} h-full antialiased motion-safe:scroll-smooth`}
+      data-scroll-behavior="smooth"
     >
       <body className="min-h-full flex flex-col">
         <Nav />

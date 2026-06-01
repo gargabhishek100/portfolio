@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { ArrowUpRight } from "lucide-react";
 import { projects, type ProjectStatus } from "@/lib/projects";
 
@@ -65,18 +66,39 @@ export function Work() {
 
                 {project.links.length > 0 && (
                   <div className="mt-6 flex flex-wrap gap-x-6 gap-y-2">
-                    {project.links.map((link) => (
-                      <a
-                        key={link.href}
-                        href={link.href}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="group inline-flex items-center gap-1 text-sm font-medium text-primary transition-colors hover:text-accent-warm"
-                      >
-                        {link.label}
+                    {project.links.map((link) => {
+                      // External links (http/https) open in a new tab.
+                      // Internal routes (/ml-models etc.) use Next.js Link
+                      // for client-side navigation — no full page reload.
+                      const isExternal = link.href.startsWith("http");
+                      const cls =
+                        "group inline-flex items-center gap-1 text-sm font-medium text-primary transition-colors hover:text-accent-warm";
+                      const icon = (
                         <ArrowUpRight className="size-4 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
-                      </a>
-                    ))}
+                      );
+
+                      return isExternal ? (
+                        <a
+                          key={link.href}
+                          href={link.href}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className={cls}
+                        >
+                          {link.label}
+                          {icon}
+                        </a>
+                      ) : (
+                        <Link
+                          key={link.href}
+                          href={link.href}
+                          className={cls}
+                        >
+                          {link.label}
+                          {icon}
+                        </Link>
+                      );
+                    })}
                   </div>
                 )}
               </div>
