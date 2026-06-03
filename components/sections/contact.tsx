@@ -80,7 +80,7 @@ export function Contact() {
             Let&apos;s build something
           </h2>
           <p className="mt-6 text-lg leading-relaxed text-foreground/80">
-            I&apos;m open to roles, research collaborations, and conversations
+            I&apos;m enthusiastic for the conversations which leads to research collaborations, 
             where infrastructure engineering and ML meet. The fastest way to
             reach me is email — or use the form.
           </p>
