@@ -1,3 +1,11 @@
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Hazard Image Classifier | ML Lab",
+  description:
+    "CNN that classifies safety-hazard categories — fall, electrical, fire — in construction site scenes. Domain: Construction Safety. Live on HuggingFace with MongoDB logging.",
+};
+
 export default function HazardClassifierModel() {
   return (
     <main className="mx-auto max-w-5xl px-6 py-20">

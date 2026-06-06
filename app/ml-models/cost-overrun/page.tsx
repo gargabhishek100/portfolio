@@ -1,3 +1,11 @@
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Construction Cost-Overrun Predictor | ML Lab",
+  description:
+    "Predicts budget-overrun severity from project parameters using Logistic Regression, KNN, and Decision Tree. Domain: Construction Economics. Live on HuggingFace with MongoDB logging.",
+};
+
 export default function CostOverrunModel() {
   return (
     <main className="mx-auto max-w-5xl px-6 py-20">

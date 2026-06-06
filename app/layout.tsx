@@ -25,6 +25,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://www.abhishekgarg.tech"),
   title: "Abhishek Garg — Engineer · ML · Infrastructure",
   description:
     "L&T engineer and IIT Madras M.Tech researcher building ML systems for physical infrastructure — across electrical, SCADA, and construction management.",

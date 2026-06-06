@@ -1,3 +1,11 @@
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Construction Quality Defect Flagger | ML Lab",
+  description:
+    "Unsupervised anomaly detection on concrete quality data using Isolation Forest and One-Class SVM — no labelled defects required. Domain: Construction Quality.",
+};
+
 export default function QualityDefectModel() {
   return (
     <main className="mx-auto max-w-5xl px-6 py-20">

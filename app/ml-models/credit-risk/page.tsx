@@ -1,3 +1,10 @@
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Credit Risk Classifier | ML Lab",
+  description:
+    "Classifies loan-default probability using Random Forest, XGBoost and SVM with SMOTE for class imbalance. Domain: DSAI in Finance. Live on HuggingFace with MongoDB logging.",
+};
 export default function CreditRiskModel() {
   return (
     <main className="mx-auto max-w-5xl px-6 py-20">

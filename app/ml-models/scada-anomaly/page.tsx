@@ -1,3 +1,11 @@
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "SCADA Anomaly Detector | ML Lab",
+  description:
+    "LSTM autoencoder that flags abnormal pump behaviour from multivariate SCADA signals — trained on normal data only, no fault labels. The core architecture behind my M.Tech thesis at IIT Madras.",
+};
+
 export default function ScadaAnomalyModel() {
   return (
     <main className="mx-auto max-w-5xl px-6 py-20">

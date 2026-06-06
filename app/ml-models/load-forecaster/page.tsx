@@ -1,3 +1,11 @@
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Power Load Forecaster | ML Lab",
+  description:
+    "LSTM network that forecasts 24 hours of electricity demand from 48-hour history, learning daily peaks and weekday patterns. ~5% mean error. Domain: Smart Power Grid.",
+};
+
 export default function LoadForecasterModel() {
   return (
     <main className="mx-auto max-w-5xl px-6 py-20">
