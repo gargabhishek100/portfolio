@@ -25,7 +25,7 @@ export function Hero() {
         <p
           className="mt-8 max-w-2xl animate-in fade-in slide-in-from-bottom-4 duration-700 text-balance text-xl leading-relaxed text-foreground/80 sm:text-2xl [animation-fill-mode:both] [animation-delay:470ms]"
         >
-          Electrical engineer, construction manager, and ML practitioner —
+          Electrical engineer, Data science enthusiast —
           turning field experience in SCADA and infrastructure into models that
           see failures coming.
         </p>
